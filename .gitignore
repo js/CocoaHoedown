@@ -16,5 +16,5 @@ profile
 *.xcodeproj/xcuserdata/*
 
 # cocoapods
-Pods/
+Pods/*
 Podfile.lock
