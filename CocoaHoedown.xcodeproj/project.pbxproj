@@ -12,7 +12,6 @@
 		763B26271879E6F8007F3D6C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 763B26261879E6F8007F3D6C /* XCTest.framework */; };
 		763B26281879E6F8007F3D6C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 763B26071879E6F8007F3D6C /* Cocoa.framework */; };
 		763B26301879E6F8007F3D6C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 763B262E1879E6F8007F3D6C /* InfoPlist.strings */; };
-		763B26321879E6F8007F3D6C /* CocoaHoedownTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 763B26311879E6F8007F3D6C /* CocoaHoedownTests.m */; };
 		763B263E1879ECC7007F3D6C /* JKSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 763B263D1879ECC7007F3D6C /* JKSAppDelegate.m */; };
 		763B264B1879ECD8007F3D6C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 763B26471879ECD8007F3D6C /* Images.xcassets */; };
 		763B264E1879ECEC007F3D6C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 763B264C1879ECEC007F3D6C /* MainMenu.xib */; };
@@ -21,6 +20,23 @@
 		763B265F1879ED1D007F3D6C /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 763B265B1879ED1D007F3D6C /* Credits.rtf */; };
 		763B26631879EDE2007F3D6C /* JKSHoedownRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 763B26621879EDE2007F3D6C /* JKSHoedownRenderer.m */; };
 		763B26641879EDE2007F3D6C /* JKSHoedownRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 763B26621879EDE2007F3D6C /* JKSHoedownRenderer.m */; };
+		763B26661879EEE7007F3D6C /* JKSHoedownRendererTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 763B26651879EEE7007F3D6C /* JKSHoedownRendererTest.m */; };
+		763B26761879F0B9007F3D6C /* autolink.c in Sources */ = {isa = PBXBuildFile; fileRef = 763B26681879F0B9007F3D6C /* autolink.c */; };
+		763B26771879F0B9007F3D6C /* autolink.c in Sources */ = {isa = PBXBuildFile; fileRef = 763B26681879F0B9007F3D6C /* autolink.c */; };
+		763B26781879F0B9007F3D6C /* buffer.c in Sources */ = {isa = PBXBuildFile; fileRef = 763B266A1879F0B9007F3D6C /* buffer.c */; };
+		763B26791879F0B9007F3D6C /* buffer.c in Sources */ = {isa = PBXBuildFile; fileRef = 763B266A1879F0B9007F3D6C /* buffer.c */; };
+		763B267A1879F0B9007F3D6C /* escape.c in Sources */ = {isa = PBXBuildFile; fileRef = 763B266C1879F0B9007F3D6C /* escape.c */; };
+		763B267B1879F0B9007F3D6C /* escape.c in Sources */ = {isa = PBXBuildFile; fileRef = 763B266C1879F0B9007F3D6C /* escape.c */; };
+		763B267C1879F0B9007F3D6C /* html_blocks.c in Sources */ = {isa = PBXBuildFile; fileRef = 763B266E1879F0B9007F3D6C /* html_blocks.c */; };
+		763B267D1879F0B9007F3D6C /* html_blocks.c in Sources */ = {isa = PBXBuildFile; fileRef = 763B266E1879F0B9007F3D6C /* html_blocks.c */; };
+		763B267E1879F0B9007F3D6C /* html_smartypants.c in Sources */ = {isa = PBXBuildFile; fileRef = 763B266F1879F0B9007F3D6C /* html_smartypants.c */; };
+		763B267F1879F0B9007F3D6C /* html_smartypants.c in Sources */ = {isa = PBXBuildFile; fileRef = 763B266F1879F0B9007F3D6C /* html_smartypants.c */; };
+		763B26801879F0B9007F3D6C /* html.c in Sources */ = {isa = PBXBuildFile; fileRef = 763B26701879F0B9007F3D6C /* html.c */; };
+		763B26811879F0B9007F3D6C /* html.c in Sources */ = {isa = PBXBuildFile; fileRef = 763B26701879F0B9007F3D6C /* html.c */; };
+		763B26821879F0B9007F3D6C /* markdown.c in Sources */ = {isa = PBXBuildFile; fileRef = 763B26721879F0B9007F3D6C /* markdown.c */; };
+		763B26831879F0B9007F3D6C /* markdown.c in Sources */ = {isa = PBXBuildFile; fileRef = 763B26721879F0B9007F3D6C /* markdown.c */; };
+		763B26841879F0B9007F3D6C /* stack.c in Sources */ = {isa = PBXBuildFile; fileRef = 763B26741879F0B9007F3D6C /* stack.c */; };
+		763B26851879F0B9007F3D6C /* stack.c in Sources */ = {isa = PBXBuildFile; fileRef = 763B26741879F0B9007F3D6C /* stack.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +59,6 @@
 		763B26261879E6F8007F3D6C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		763B262D1879E6F8007F3D6C /* CocoaHoedownTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CocoaHoedownTests-Info.plist"; sourceTree = "<group>"; };
 		763B262F1879E6F8007F3D6C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		763B26311879E6F8007F3D6C /* CocoaHoedownTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CocoaHoedownTests.m; sourceTree = "<group>"; };
 		763B263C1879ECC7007F3D6C /* JKSAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JKSAppDelegate.h; path = ExampleApp/JKSAppDelegate.h; sourceTree = SOURCE_ROOT; };
 		763B263D1879ECC7007F3D6C /* JKSAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JKSAppDelegate.m; path = ExampleApp/JKSAppDelegate.m; sourceTree = SOURCE_ROOT; };
 		763B26471879ECD8007F3D6C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ExampleApp/Images.xcassets; sourceTree = SOURCE_ROOT; };
@@ -55,6 +70,21 @@
 		763B26601879ED35007F3D6C /* CocoaHoedown-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "CocoaHoedown-Prefix.pch"; path = "ExampleApp/CocoaHoedown-Prefix.pch"; sourceTree = SOURCE_ROOT; };
 		763B26611879EDE2007F3D6C /* JKSHoedownRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JKSHoedownRenderer.h; path = CocoaHoedown/JKSHoedownRenderer.h; sourceTree = "<group>"; };
 		763B26621879EDE2007F3D6C /* JKSHoedownRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JKSHoedownRenderer.m; path = CocoaHoedown/JKSHoedownRenderer.m; sourceTree = "<group>"; };
+		763B26651879EEE7007F3D6C /* JKSHoedownRendererTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKSHoedownRendererTest.m; sourceTree = "<group>"; };
+		763B26681879F0B9007F3D6C /* autolink.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = autolink.c; path = Vendor/hoedown/src/autolink.c; sourceTree = "<group>"; };
+		763B26691879F0B9007F3D6C /* autolink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = autolink.h; path = Vendor/hoedown/src/autolink.h; sourceTree = "<group>"; };
+		763B266A1879F0B9007F3D6C /* buffer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = buffer.c; path = Vendor/hoedown/src/buffer.c; sourceTree = "<group>"; };
+		763B266B1879F0B9007F3D6C /* buffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = buffer.h; path = Vendor/hoedown/src/buffer.h; sourceTree = "<group>"; };
+		763B266C1879F0B9007F3D6C /* escape.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = escape.c; path = Vendor/hoedown/src/escape.c; sourceTree = "<group>"; };
+		763B266D1879F0B9007F3D6C /* escape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = escape.h; path = Vendor/hoedown/src/escape.h; sourceTree = "<group>"; };
+		763B266E1879F0B9007F3D6C /* html_blocks.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = html_blocks.c; path = Vendor/hoedown/src/html_blocks.c; sourceTree = "<group>"; };
+		763B266F1879F0B9007F3D6C /* html_smartypants.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = html_smartypants.c; path = Vendor/hoedown/src/html_smartypants.c; sourceTree = "<group>"; };
+		763B26701879F0B9007F3D6C /* html.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = html.c; path = Vendor/hoedown/src/html.c; sourceTree = "<group>"; };
+		763B26711879F0B9007F3D6C /* html.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = html.h; path = Vendor/hoedown/src/html.h; sourceTree = "<group>"; };
+		763B26721879F0B9007F3D6C /* markdown.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = markdown.c; path = Vendor/hoedown/src/markdown.c; sourceTree = "<group>"; };
+		763B26731879F0B9007F3D6C /* markdown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = markdown.h; path = Vendor/hoedown/src/markdown.h; sourceTree = "<group>"; };
+		763B26741879F0B9007F3D6C /* stack.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = stack.c; path = Vendor/hoedown/src/stack.c; sourceTree = "<group>"; };
+		763B26751879F0B9007F3D6C /* stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = stack.h; path = Vendor/hoedown/src/stack.h; sourceTree = "<group>"; };
 		93971B6517364200A2A41924 /* libPods-CocoaHoedownTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CocoaHoedownTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDD93F3559E146A1AD6A140F /* Pods-CocoaHoedownTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CocoaHoedownTests.xcconfig"; path = "Pods/Pods-CocoaHoedownTests.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -151,7 +181,7 @@
 		763B262B1879E6F8007F3D6C /* CocoaHoedownTests */ = {
 			isa = PBXGroup;
 			children = (
-				763B26311879E6F8007F3D6C /* CocoaHoedownTests.m */,
+				763B26651879EEE7007F3D6C /* JKSHoedownRendererTest.m */,
 				763B262C1879E6F8007F3D6C /* Supporting Files */,
 			);
 			path = CocoaHoedownTests;
@@ -169,10 +199,32 @@
 		763B263B1879E712007F3D6C /* CocoaHoedown */ = {
 			isa = PBXGroup;
 			children = (
+				763B26671879F05B007F3D6C /* hoedown */,
 				763B26611879EDE2007F3D6C /* JKSHoedownRenderer.h */,
 				763B26621879EDE2007F3D6C /* JKSHoedownRenderer.m */,
 			);
 			name = CocoaHoedown;
+			sourceTree = "<group>";
+		};
+		763B26671879F05B007F3D6C /* hoedown */ = {
+			isa = PBXGroup;
+			children = (
+				763B26681879F0B9007F3D6C /* autolink.c */,
+				763B26691879F0B9007F3D6C /* autolink.h */,
+				763B266A1879F0B9007F3D6C /* buffer.c */,
+				763B266B1879F0B9007F3D6C /* buffer.h */,
+				763B266C1879F0B9007F3D6C /* escape.c */,
+				763B266D1879F0B9007F3D6C /* escape.h */,
+				763B266E1879F0B9007F3D6C /* html_blocks.c */,
+				763B266F1879F0B9007F3D6C /* html_smartypants.c */,
+				763B26701879F0B9007F3D6C /* html.c */,
+				763B26711879F0B9007F3D6C /* html.h */,
+				763B26721879F0B9007F3D6C /* markdown.c */,
+				763B26731879F0B9007F3D6C /* markdown.h */,
+				763B26741879F0B9007F3D6C /* stack.c */,
+				763B26751879F0B9007F3D6C /* stack.h */,
+			);
+			name = hoedown;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,8 +361,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				763B267C1879F0B9007F3D6C /* html_blocks.c in Sources */,
 				763B26631879EDE2007F3D6C /* JKSHoedownRenderer.m in Sources */,
+				763B26801879F0B9007F3D6C /* html.c in Sources */,
 				763B26551879ED0D007F3D6C /* main.m in Sources */,
+				763B26761879F0B9007F3D6C /* autolink.c in Sources */,
+				763B26781879F0B9007F3D6C /* buffer.c in Sources */,
+				763B26821879F0B9007F3D6C /* markdown.c in Sources */,
+				763B26841879F0B9007F3D6C /* stack.c in Sources */,
+				763B267E1879F0B9007F3D6C /* html_smartypants.c in Sources */,
+				763B267A1879F0B9007F3D6C /* escape.c in Sources */,
 				763B263E1879ECC7007F3D6C /* JKSAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -319,8 +379,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				763B26851879F0B9007F3D6C /* stack.c in Sources */,
+				763B267D1879F0B9007F3D6C /* html_blocks.c in Sources */,
+				763B26831879F0B9007F3D6C /* markdown.c in Sources */,
+				763B267B1879F0B9007F3D6C /* escape.c in Sources */,
+				763B267F1879F0B9007F3D6C /* html_smartypants.c in Sources */,
 				763B26641879EDE2007F3D6C /* JKSHoedownRenderer.m in Sources */,
-				763B26321879E6F8007F3D6C /* CocoaHoedownTests.m in Sources */,
+				763B26811879F0B9007F3D6C /* html.c in Sources */,
+				763B26661879EEE7007F3D6C /* JKSHoedownRendererTest.m in Sources */,
+				763B26771879F0B9007F3D6C /* autolink.c in Sources */,
+				763B26791879F0B9007F3D6C /* buffer.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -475,7 +543,7 @@
 					"$(inherited)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "CocoaHoedown/CocoaHoedown-Prefix.pch";
+				GCC_PREFIX_HEADER = "ExampleApp/CocoaHoedown-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -498,7 +566,7 @@
 					"$(inherited)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "CocoaHoedown/CocoaHoedown-Prefix.pch";
+				GCC_PREFIX_HEADER = "ExampleApp/CocoaHoedown-Prefix.pch";
 				INFOPLIST_FILE = "CocoaHoedownTests/CocoaHoedownTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
