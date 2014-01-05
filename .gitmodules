@@ -1,0 +1,3 @@
+[submodule "Vendor/hoedown"]
+	path = Vendor/hoedown
+	url = https://github.com/hoedown/hoedown.git
