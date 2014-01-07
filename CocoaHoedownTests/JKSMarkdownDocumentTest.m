@@ -80,17 +80,17 @@
     NSString *output = @"<ul>\n<li>\n<a href=\"#toc_0\">one</a>\n<ul>\n"
                         "<li>\n<a href=\"#toc_1\">two</a>\n</li>\n</ul>"
                         "\n</li>\n</ul>\n";
-    expect([renderer tableOfContents]).to.equal(output);
+    expect([renderer tableOfContentsHTML]).to.equal(output);
 }
 
 
 - (void)testTOCRenderingEmptyString
 {
     JKSMarkdownDocument *renderer = [[JKSMarkdownDocument alloc] initWithString:nil];
-    expect([renderer tableOfContents]).to.beNil();
+    expect([renderer tableOfContentsHTML]).to.beNil();
 
     renderer = [[JKSMarkdownDocument alloc] initWithString:@""];
-    expect([renderer tableOfContents]).to.beNil();
+    expect([renderer tableOfContentsHTML]).to.beNil();
 }
 
 @end

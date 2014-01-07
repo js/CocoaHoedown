@@ -47,7 +47,7 @@
 }
 
 
-- (NSString *)tableOfContents
+- (NSString *)tableOfContentsHTML
 {
     if ([self.markdownData length] == 0) {
         return nil;

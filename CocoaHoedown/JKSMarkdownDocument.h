@@ -17,6 +17,6 @@
 
 - (NSString *)HTML;
 //- (NSSTring *)HTMLWithOptions:(JKSMarkdownDocumentOptions)options;
-- (NSString *)tableOfContents;
+- (NSString *)tableOfContentsHTML;
 
 @end
