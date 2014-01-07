@@ -8,12 +8,15 @@
 
 #import <Foundation/Foundation.h>
 
-@interface JKSHoedownRenderer : NSObject
-/// Whether or not to preprocess with "smarty pants". Defaults to yes
+@interface JKSMarkdownDocument : NSObject
+/// Whether or not to preprocess with "smarty pants". Defaults to NO
 @property (nonatomic, assign, getter = isSmartyPantsEnabled) BOOL smartyPantsEnabled;
 
+- (instancetype)initWithData:(NSData *)data;
 - (instancetype)initWithString:(NSString *)string;
 
-- (NSString *)renderedHTML;
+- (NSString *)HTML;
+//- (NSSTring *)HTMLWithOptions:(JKSMarkdownDocumentOptions)options;
+- (NSString *)tableOfContents;
 
 @end

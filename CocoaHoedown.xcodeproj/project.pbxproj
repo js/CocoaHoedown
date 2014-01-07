@@ -18,9 +18,9 @@
 		763B26541879ED0D007F3D6C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 763B26501879ED0D007F3D6C /* InfoPlist.strings */; };
 		763B26551879ED0D007F3D6C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 763B26521879ED0D007F3D6C /* main.m */; };
 		763B265F1879ED1D007F3D6C /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 763B265B1879ED1D007F3D6C /* Credits.rtf */; };
-		763B26631879EDE2007F3D6C /* JKSHoedownRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 763B26621879EDE2007F3D6C /* JKSHoedownRenderer.m */; };
-		763B26641879EDE2007F3D6C /* JKSHoedownRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 763B26621879EDE2007F3D6C /* JKSHoedownRenderer.m */; };
-		763B26661879EEE7007F3D6C /* JKSHoedownRendererTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 763B26651879EEE7007F3D6C /* JKSHoedownRendererTest.m */; };
+		763B26631879EDE2007F3D6C /* JKSMarkdownDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 763B26621879EDE2007F3D6C /* JKSMarkdownDocument.m */; };
+		763B26641879EDE2007F3D6C /* JKSMarkdownDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 763B26621879EDE2007F3D6C /* JKSMarkdownDocument.m */; };
+		763B26661879EEE7007F3D6C /* JKSMarkdownDocumentTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 763B26651879EEE7007F3D6C /* JKSMarkdownDocumentTest.m */; };
 		763B26761879F0B9007F3D6C /* autolink.c in Sources */ = {isa = PBXBuildFile; fileRef = 763B26681879F0B9007F3D6C /* autolink.c */; };
 		763B26771879F0B9007F3D6C /* autolink.c in Sources */ = {isa = PBXBuildFile; fileRef = 763B26681879F0B9007F3D6C /* autolink.c */; };
 		763B26781879F0B9007F3D6C /* buffer.c in Sources */ = {isa = PBXBuildFile; fileRef = 763B266A1879F0B9007F3D6C /* buffer.c */; };
@@ -68,9 +68,9 @@
 		763B26521879ED0D007F3D6C /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ExampleApp/main.m; sourceTree = SOURCE_ROOT; };
 		763B265C1879ED1D007F3D6C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = ExampleApp/en.lproj/Credits.rtf; sourceTree = SOURCE_ROOT; };
 		763B26601879ED35007F3D6C /* CocoaHoedown-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "CocoaHoedown-Prefix.pch"; path = "ExampleApp/CocoaHoedown-Prefix.pch"; sourceTree = SOURCE_ROOT; };
-		763B26611879EDE2007F3D6C /* JKSHoedownRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JKSHoedownRenderer.h; path = CocoaHoedown/JKSHoedownRenderer.h; sourceTree = "<group>"; };
-		763B26621879EDE2007F3D6C /* JKSHoedownRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JKSHoedownRenderer.m; path = CocoaHoedown/JKSHoedownRenderer.m; sourceTree = "<group>"; };
-		763B26651879EEE7007F3D6C /* JKSHoedownRendererTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKSHoedownRendererTest.m; sourceTree = "<group>"; };
+		763B26611879EDE2007F3D6C /* JKSMarkdownDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JKSMarkdownDocument.h; path = CocoaHoedown/JKSMarkdownDocument.h; sourceTree = "<group>"; };
+		763B26621879EDE2007F3D6C /* JKSMarkdownDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JKSMarkdownDocument.m; path = CocoaHoedown/JKSMarkdownDocument.m; sourceTree = "<group>"; };
+		763B26651879EEE7007F3D6C /* JKSMarkdownDocumentTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKSMarkdownDocumentTest.m; sourceTree = "<group>"; };
 		763B26681879F0B9007F3D6C /* autolink.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = autolink.c; path = Vendor/hoedown/src/autolink.c; sourceTree = "<group>"; };
 		763B26691879F0B9007F3D6C /* autolink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = autolink.h; path = Vendor/hoedown/src/autolink.h; sourceTree = "<group>"; };
 		763B266A1879F0B9007F3D6C /* buffer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = buffer.c; path = Vendor/hoedown/src/buffer.c; sourceTree = "<group>"; };
@@ -181,7 +181,7 @@
 		763B262B1879E6F8007F3D6C /* CocoaHoedownTests */ = {
 			isa = PBXGroup;
 			children = (
-				763B26651879EEE7007F3D6C /* JKSHoedownRendererTest.m */,
+				763B26651879EEE7007F3D6C /* JKSMarkdownDocumentTest.m */,
 				763B262C1879E6F8007F3D6C /* Supporting Files */,
 			);
 			path = CocoaHoedownTests;
@@ -200,8 +200,8 @@
 			isa = PBXGroup;
 			children = (
 				763B26671879F05B007F3D6C /* hoedown */,
-				763B26611879EDE2007F3D6C /* JKSHoedownRenderer.h */,
-				763B26621879EDE2007F3D6C /* JKSHoedownRenderer.m */,
+				763B26611879EDE2007F3D6C /* JKSMarkdownDocument.h */,
+				763B26621879EDE2007F3D6C /* JKSMarkdownDocument.m */,
 			);
 			name = CocoaHoedown;
 			sourceTree = "<group>";
@@ -362,7 +362,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				763B267C1879F0B9007F3D6C /* html_blocks.c in Sources */,
-				763B26631879EDE2007F3D6C /* JKSHoedownRenderer.m in Sources */,
+				763B26631879EDE2007F3D6C /* JKSMarkdownDocument.m in Sources */,
 				763B26801879F0B9007F3D6C /* html.c in Sources */,
 				763B26551879ED0D007F3D6C /* main.m in Sources */,
 				763B26761879F0B9007F3D6C /* autolink.c in Sources */,
@@ -384,9 +384,9 @@
 				763B26831879F0B9007F3D6C /* markdown.c in Sources */,
 				763B267B1879F0B9007F3D6C /* escape.c in Sources */,
 				763B267F1879F0B9007F3D6C /* html_smartypants.c in Sources */,
-				763B26641879EDE2007F3D6C /* JKSHoedownRenderer.m in Sources */,
+				763B26641879EDE2007F3D6C /* JKSMarkdownDocument.m in Sources */,
 				763B26811879F0B9007F3D6C /* html.c in Sources */,
-				763B26661879EEE7007F3D6C /* JKSHoedownRendererTest.m in Sources */,
+				763B26661879EEE7007F3D6C /* JKSMarkdownDocumentTest.m in Sources */,
 				763B26771879F0B9007F3D6C /* autolink.c in Sources */,
 				763B26791879F0B9007F3D6C /* buffer.c in Sources */,
 			);
