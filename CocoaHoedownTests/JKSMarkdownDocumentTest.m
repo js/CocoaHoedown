@@ -93,4 +93,22 @@
     expect([renderer tableOfContentsHTML]).to.beNil();
 }
 
+
+#pragma mark Render options and extentions
+
+- (void)testRenderOptions
+{
+    JKSMarkdownDocument *renderer = [[JKSMarkdownDocument alloc] initWithString:@"something ![img](img.jpg)\n\n[a link](http://example.com/)"];
+    renderer.renderOptions = (JKSMarkdownRenderOptionSkipImages | JKSMarkdownRenderOptionSkipLinks);
+    expect([renderer HTML]).to.equal(@"<p>something ![img](img.jpg)</p>\n\n<p>[a link](http://example.com/)</p>\n");
+}
+
+
+- (void)testMarkdownExtentions
+{
+    JKSMarkdownDocument *renderer = [[JKSMarkdownDocument alloc] initWithString:@"~~something~~ www.example.com"];
+    renderer.markdownExtentions = (JKSMarkdownExtentionAutolink | JKSMarkdownExtentionStrikethrough);
+    expect([renderer HTML]).to.equal(@"<p><del>something</del> <a href=\"http://www.example.com\">www.example.com</a></p>\n");
+}
+
 @end

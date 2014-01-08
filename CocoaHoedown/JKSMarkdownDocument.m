@@ -39,7 +39,7 @@
         return nil;
     }
 
-    hoedown_renderer *renderer = hoedown_html_renderer_new(0, 0);
+    hoedown_renderer *renderer = hoedown_html_renderer_new(self.renderOptions, 16);
     NSString *output = render(renderer, self);
     hoedown_html_renderer_free(renderer);
 
@@ -65,7 +65,7 @@
 
 static inline NSString* render(const hoedown_renderer *renderer, JKSMarkdownDocument *self)
 {
-    hoedown_markdown *markdown = hoedown_markdown_new(0, 16, renderer);
+    hoedown_markdown *markdown = hoedown_markdown_new(self.markdownExtentions, 16, renderer);
 
     hoedown_buffer *outputBuffer = hoedown_buffer_new(64);
     hoedown_buffer *sourceBuffer = hoedown_buffer_new(64);
