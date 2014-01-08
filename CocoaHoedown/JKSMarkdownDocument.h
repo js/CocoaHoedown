@@ -39,17 +39,19 @@ typedef NS_ENUM(NSUInteger, JKSMarkdownRenderOption) {
     JKSMarkdownRenderOptionEscape = HOEDOWN_HTML_ESCAPE,
     JKSMarkdownRenderOptionPrettify = HOEDOWN_HTML_PRETTIFY,
 };
+
 @interface JKSMarkdownDocument : NSObject
 /// Whether or not to preprocess with "smarty pants". Defaults to NO
 @property (nonatomic, assign, getter = isSmartyPantsEnabled) BOOL smartyPantsEnabled;
+/// Mask of Markdown extentions to enable
 @property (nonatomic, assign) JKSMarkdownExtention markdownExtentions;
+/// Mask of HMTL render options to use
 @property (nonatomic, assign) JKSMarkdownRenderOption renderOptions;
 
 - (instancetype)initWithData:(NSData *)data;
 - (instancetype)initWithString:(NSString *)string;
 
 - (NSString *)HTML;
-//- (NSSTring *)HTMLWithOptions:(JKSMarkdownDocumentOptions)options;
 - (NSString *)tableOfContentsHTML;
 
 @end
