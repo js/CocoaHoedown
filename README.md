@@ -1,12 +1,21 @@
 CocoaHoedown
 ============
 
-CocoaHoedown is an objective-c wrapper for [hoedown](https://github.com/hoedown/hoedown).
+CocoaHoedown is an Objective-C wrapper for [hoedown](https://github.com/hoedown/hoedown), which renders HTML from Markdown.
 
 How To
 ------
 
-TODO
+```
+JKSMarkdownDocument *renderer = [[JKSMarkdownDocument alloc] initWithString:@"\"clever -- pants\"..."];
+renderer.smartyPantsEnabled = YES;
+NSString *output = [renderer HTML]; // "<p>&ldquo;clever &ndash; pants&rdquo;&hellip;</p>\n"
+```
+
+Credits
+-------
+
+CocoaHoedown is just a simple wrapper around [hoedown](https://github.com/hoedown/hoedown), all credit for the actual markdown parsing and rendering goes to the authors of hoedown.
 
 License
 -------
