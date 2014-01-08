@@ -10,6 +10,9 @@
 #import "markdown.h"
 #import "html.h"
 
+static const int kNestingLevel = 15;
+static const size_t kBufferUnit = 64;
+
 @interface JKSMarkdownDocument ()
 @property (nonatomic, strong) NSData *markdownData;
 @end
@@ -39,7 +42,7 @@
         return nil;
     }
 
-    hoedown_renderer *renderer = hoedown_html_renderer_new(self.renderOptions, 16);
+    hoedown_renderer *renderer = hoedown_html_renderer_new(self.renderOptions, kNestingLevel);
     NSString *output = render(renderer, self);
     hoedown_html_renderer_free(renderer);
 
@@ -53,7 +56,7 @@
         return nil;
     }
 
-    hoedown_renderer *renderer = hoedown_html_toc_renderer_new(16);
+    hoedown_renderer *renderer = hoedown_html_toc_renderer_new(kNestingLevel);
     NSString *output = render(renderer, self);
     hoedown_html_renderer_free(renderer);
 
@@ -65,10 +68,10 @@
 
 static inline NSString* render(const hoedown_renderer *renderer, JKSMarkdownDocument *self)
 {
-    hoedown_markdown *markdown = hoedown_markdown_new(self.markdownExtentions, 16, renderer);
+    hoedown_markdown *markdown = hoedown_markdown_new(self.markdownExtentions, kNestingLevel, renderer);
 
-    hoedown_buffer *outputBuffer = hoedown_buffer_new(64);
-    hoedown_buffer *sourceBuffer = hoedown_buffer_new(64);
+    hoedown_buffer *outputBuffer = hoedown_buffer_new(kBufferUnit);
+    hoedown_buffer *sourceBuffer = hoedown_buffer_new(kBufferUnit);
 
     if (self.isSmartyPantsEnabled) {
         hoedown_html_smartypants(sourceBuffer, [self.markdownData bytes], [self.markdownData length]);
