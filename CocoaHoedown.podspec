@@ -8,8 +8,8 @@ Pod::Spec.new do |s|
                     DESC
   s.homepage      = "https://github.com/js/CocoaHoedown"
   s.license       = { :type => "MIT", :file => "LICENSE" }
-  s.author        = { "Johan Sørensen" => "johan@johansorensen.com" }
-  s.source        = { :git => "https://github.com/js/CocoaHoedown.git" }
+  s.author        = { "Johan Sørensen" => "johan@johansorensen.com", "Valerii Hiora" => "valerii.hiora@gmail.com" }
+  s.source        = { :git => "https://github.com/vhbit/CocoaHoedown.git" }
   s.source_files  = "CocoaHoedown/*.{h,m}"
   s.exclude_files = "Vendor", "ExampleApp", "CocoaHoedown.xcodeproj", "CocoaHoedown.xcworkspace", "CocoaHoedownTests"
   s.requires_arc  = true
