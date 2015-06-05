@@ -33,10 +33,9 @@
 		763B267F1879F0B9007F3D6C /* html_smartypants.c in Sources */ = {isa = PBXBuildFile; fileRef = 763B266F1879F0B9007F3D6C /* html_smartypants.c */; };
 		763B26801879F0B9007F3D6C /* html.c in Sources */ = {isa = PBXBuildFile; fileRef = 763B26701879F0B9007F3D6C /* html.c */; };
 		763B26811879F0B9007F3D6C /* html.c in Sources */ = {isa = PBXBuildFile; fileRef = 763B26701879F0B9007F3D6C /* html.c */; };
-		763B26821879F0B9007F3D6C /* markdown.c in Sources */ = {isa = PBXBuildFile; fileRef = 763B26721879F0B9007F3D6C /* markdown.c */; };
-		763B26831879F0B9007F3D6C /* markdown.c in Sources */ = {isa = PBXBuildFile; fileRef = 763B26721879F0B9007F3D6C /* markdown.c */; };
 		763B26841879F0B9007F3D6C /* stack.c in Sources */ = {isa = PBXBuildFile; fileRef = 763B26741879F0B9007F3D6C /* stack.c */; };
 		763B26851879F0B9007F3D6C /* stack.c in Sources */ = {isa = PBXBuildFile; fileRef = 763B26741879F0B9007F3D6C /* stack.c */; };
+		C4DB15A21B21F950009A9597 /* document.c in Sources */ = {isa = PBXBuildFile; fileRef = C4DB15A01B21F950009A9597 /* document.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +49,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		36C3E9ED5B314786CB1AA030 /* Pods-CocoaHoedownTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CocoaHoedownTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CocoaHoedownTests/Pods-CocoaHoedownTests.release.xcconfig"; sourceTree = "<group>"; };
 		763B26041879E6F8007F3D6C /* CocoaHoedown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CocoaHoedown.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		763B26071879E6F8007F3D6C /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		763B260A1879E6F8007F3D6C /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -81,12 +81,12 @@
 		763B266F1879F0B9007F3D6C /* html_smartypants.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = html_smartypants.c; path = Vendor/hoedown/src/html_smartypants.c; sourceTree = "<group>"; };
 		763B26701879F0B9007F3D6C /* html.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = html.c; path = Vendor/hoedown/src/html.c; sourceTree = "<group>"; };
 		763B26711879F0B9007F3D6C /* html.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = html.h; path = Vendor/hoedown/src/html.h; sourceTree = "<group>"; };
-		763B26721879F0B9007F3D6C /* markdown.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = markdown.c; path = Vendor/hoedown/src/markdown.c; sourceTree = "<group>"; };
-		763B26731879F0B9007F3D6C /* markdown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = markdown.h; path = Vendor/hoedown/src/markdown.h; sourceTree = "<group>"; };
 		763B26741879F0B9007F3D6C /* stack.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = stack.c; path = Vendor/hoedown/src/stack.c; sourceTree = "<group>"; };
 		763B26751879F0B9007F3D6C /* stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = stack.h; path = Vendor/hoedown/src/stack.h; sourceTree = "<group>"; };
 		93971B6517364200A2A41924 /* libPods-CocoaHoedownTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CocoaHoedownTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BDD93F3559E146A1AD6A140F /* Pods-CocoaHoedownTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CocoaHoedownTests.xcconfig"; path = "Pods/Pods-CocoaHoedownTests.xcconfig"; sourceTree = "<group>"; };
+		B723BD06D86339705DCC821D /* Pods-CocoaHoedownTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CocoaHoedownTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CocoaHoedownTests/Pods-CocoaHoedownTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C4DB15A01B21F950009A9597 /* document.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = document.c; path = Vendor/hoedown/src/document.c; sourceTree = "<group>"; };
+		C4DB15A11B21F950009A9597 /* document.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = document.h; path = Vendor/hoedown/src/document.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,7 +119,7 @@
 				763B262B1879E6F8007F3D6C /* CocoaHoedownTests */,
 				763B26061879E6F8007F3D6C /* Frameworks */,
 				763B26051879E6F8007F3D6C /* Products */,
-				BDD93F3559E146A1AD6A140F /* Pods-CocoaHoedownTests.xcconfig */,
+				94CB2DD5E79B5219ED0FCF6C /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -209,6 +209,8 @@
 		763B26671879F05B007F3D6C /* hoedown */ = {
 			isa = PBXGroup;
 			children = (
+				C4DB15A01B21F950009A9597 /* document.c */,
+				C4DB15A11B21F950009A9597 /* document.h */,
 				763B26681879F0B9007F3D6C /* autolink.c */,
 				763B26691879F0B9007F3D6C /* autolink.h */,
 				763B266A1879F0B9007F3D6C /* buffer.c */,
@@ -219,12 +221,19 @@
 				763B266F1879F0B9007F3D6C /* html_smartypants.c */,
 				763B26701879F0B9007F3D6C /* html.c */,
 				763B26711879F0B9007F3D6C /* html.h */,
-				763B26721879F0B9007F3D6C /* markdown.c */,
-				763B26731879F0B9007F3D6C /* markdown.h */,
 				763B26741879F0B9007F3D6C /* stack.c */,
 				763B26751879F0B9007F3D6C /* stack.h */,
 			);
 			name = hoedown;
+			sourceTree = "<group>";
+		};
+		94CB2DD5E79B5219ED0FCF6C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B723BD06D86339705DCC821D /* Pods-CocoaHoedownTests.debug.xcconfig */,
+				36C3E9ED5B314786CB1AA030 /* Pods-CocoaHoedownTests.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -336,7 +345,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-CocoaHoedownTests-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CocoaHoedownTests/Pods-CocoaHoedownTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E1A9646CD6B14EBAA8CA4284 /* Check Pods Manifest.lock */ = {
@@ -367,10 +376,10 @@
 				763B26551879ED0D007F3D6C /* main.m in Sources */,
 				763B26761879F0B9007F3D6C /* autolink.c in Sources */,
 				763B26781879F0B9007F3D6C /* buffer.c in Sources */,
-				763B26821879F0B9007F3D6C /* markdown.c in Sources */,
 				763B26841879F0B9007F3D6C /* stack.c in Sources */,
 				763B267E1879F0B9007F3D6C /* html_smartypants.c in Sources */,
 				763B267A1879F0B9007F3D6C /* escape.c in Sources */,
+				C4DB15A21B21F950009A9597 /* document.c in Sources */,
 				763B263E1879ECC7007F3D6C /* JKSAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -381,7 +390,6 @@
 			files = (
 				763B26851879F0B9007F3D6C /* stack.c in Sources */,
 				763B267D1879F0B9007F3D6C /* html_blocks.c in Sources */,
-				763B26831879F0B9007F3D6C /* markdown.c in Sources */,
 				763B267B1879F0B9007F3D6C /* escape.c in Sources */,
 				763B267F1879F0B9007F3D6C /* html_smartypants.c in Sources */,
 				763B26641879EDE2007F3D6C /* JKSMarkdownDocument.m in Sources */,
@@ -534,7 +542,7 @@
 		};
 		763B26391879E6F8007F3D6C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BDD93F3559E146A1AD6A140F /* Pods-CocoaHoedownTests.xcconfig */;
+			baseConfigurationReference = B723BD06D86339705DCC821D /* Pods-CocoaHoedownTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CocoaHoedown.app/Contents/MacOS/CocoaHoedown";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -557,7 +565,7 @@
 		};
 		763B263A1879E6F8007F3D6C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BDD93F3559E146A1AD6A140F /* Pods-CocoaHoedownTests.xcconfig */;
+			baseConfigurationReference = 36C3E9ED5B314786CB1AA030 /* Pods-CocoaHoedownTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CocoaHoedown.app/Contents/MacOS/CocoaHoedown";
 				COMBINE_HIDPI_IMAGES = YES;

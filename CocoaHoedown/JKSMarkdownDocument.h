@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "markdown.h"
+#import "document.h"
 #import "html.h"
 
 typedef NS_ENUM(NSUInteger, JKSMarkdownExtention) {
@@ -19,7 +19,6 @@ typedef NS_ENUM(NSUInteger, JKSMarkdownExtention) {
 	JKSMarkdownExtentionUnderline = HOEDOWN_EXT_UNDERLINE,
 	JKSMarkdownExtentionSpaceHeaders = HOEDOWN_EXT_SPACE_HEADERS,
 	JKSMarkdownExtentionSuperscript = HOEDOWN_EXT_SUPERSCRIPT,
-	JKSMarkdownExtentionLaxSpacing = HOEDOWN_EXT_LAX_SPACING,
 	JKSMarkdownExtentionDisableIndentedCode = HOEDOWN_EXT_DISABLE_INDENTED_CODE,
 	JKSMarkdownExtentionHighlight = HOEDOWN_EXT_HIGHLIGHT,
 	JKSMarkdownExtentionFootnotes = HOEDOWN_EXT_FOOTNOTES,
@@ -28,16 +27,9 @@ typedef NS_ENUM(NSUInteger, JKSMarkdownExtention) {
 
 typedef NS_ENUM(NSUInteger, JKSMarkdownRenderOption) {
     JKSMarkdownRenderOptionSkipHTML = HOEDOWN_HTML_SKIP_HTML,
-    JKSMarkdownRenderOptionSkipStyle = HOEDOWN_HTML_SKIP_STYLE,
-    JKSMarkdownRenderOptionSkipImages = HOEDOWN_HTML_SKIP_IMAGES,
-    JKSMarkdownRenderOptionSkipLinks = HOEDOWN_HTML_SKIP_LINKS,
-    JKSMarkdownRenderOptionExpandTabs = HOEDOWN_HTML_EXPAND_TABS,
-    JKSMarkdownRenderOptionSafeLink = HOEDOWN_HTML_SAFELINK,
-    JKSMarkdownRenderOptionTableOfContents = HOEDOWN_HTML_TOC,
     JKSMarkdownRenderOptionHardWrap = HOEDOWN_HTML_HARD_WRAP,
     JKSMarkdownRenderOptionUseXHTML = HOEDOWN_HTML_USE_XHTML,
     JKSMarkdownRenderOptionEscape = HOEDOWN_HTML_ESCAPE,
-    JKSMarkdownRenderOptionPrettify = HOEDOWN_HTML_PRETTIFY,
 };
 
 @interface JKSMarkdownDocument : NSObject

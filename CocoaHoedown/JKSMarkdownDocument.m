@@ -7,7 +7,7 @@
 //
 
 #import "JKSMarkdownDocument.h"
-#import "markdown.h"
+#import "document.h"
 #import "html.h"
 
 static const int kNestingLevel = 15;
@@ -42,7 +42,7 @@ static const size_t kBufferUnit = 64;
         return nil;
     }
 
-    hoedown_renderer *renderer = hoedown_html_renderer_new(self.renderOptions, kNestingLevel);
+    hoedown_renderer *renderer = hoedown_html_renderer_new((hoedown_html_flags)self.renderOptions, kNestingLevel);
     NSString *output = render(renderer, self);
     hoedown_html_renderer_free(renderer);
 
@@ -68,7 +68,7 @@ static const size_t kBufferUnit = 64;
 
 static inline NSString* render(const hoedown_renderer *renderer, JKSMarkdownDocument *self)
 {
-    hoedown_markdown *markdown = hoedown_markdown_new(self.markdownExtentions, kNestingLevel, renderer);
+    hoedown_document *markdown = hoedown_document_new(renderer, (hoedown_extensions)self.markdownExtentions, kNestingLevel);
 
     hoedown_buffer *outputBuffer = hoedown_buffer_new(kBufferUnit);
     hoedown_buffer *sourceBuffer = hoedown_buffer_new(kBufferUnit);
@@ -79,10 +79,10 @@ static inline NSString* render(const hoedown_renderer *renderer, JKSMarkdownDocu
         hoedown_buffer_put(sourceBuffer, [self.markdownData bytes], [self.markdownData length]);
     }
 
-    hoedown_markdown_render(outputBuffer, sourceBuffer->data, sourceBuffer->size, markdown);
+    hoedown_document_render(markdown, outputBuffer, sourceBuffer->data, sourceBuffer->size);
     NSString *output = @(hoedown_buffer_cstr(outputBuffer));
 
-    hoedown_markdown_free(markdown);
+    hoedown_document_free(markdown);
     hoedown_buffer_free(outputBuffer);
 
     return output;
