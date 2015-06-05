@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.homepage      = "https://github.com/js/CocoaHoedown"
   s.license       = { :type => "MIT", :file => "LICENSE" }
   s.author        = { "Johan Sørensen" => "johan@johansorensen.com", "Valerii Hiora" => "valerii.hiora@gmail.com" }
-  s.source        = { :git => "https://github.com/vhbit/CocoaHoedown.git", :tag => "0.2.0" }
+  s.source        = { :git => "https://github.com/vhbit/CocoaHoedown.git", :tag => "0.3.0"}
   s.source_files  = "CocoaHoedown/*.{h,m}"
   s.exclude_files = "Vendor", "ExampleApp", "CocoaHoedown.xcodeproj", "CocoaHoedown.xcworkspace", "CocoaHoedownTests"
   s.requires_arc  = true
