@@ -1,7 +1,7 @@
 # coding: utf-8
 Pod::Spec.new do |s|
   s.name          = "CocoaHoedown"
-  s.version       = "0.2.0"
+  s.version       = "0.3.0"
   s.summary       = "Objective-C wrapper for hoedown, which renders HTML from Markdown."
   s.homepage      = "https://github.com/js/CocoaHoedown"
   s.license       = { :type => "MIT", :file => "LICENSE" }
