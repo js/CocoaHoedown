@@ -3,7 +3,16 @@ CocoaHoedown
 
 CocoaHoedown is an Objective-C wrapper for [hoedown](https://github.com/hoedown/hoedown), which renders HTML from Markdown.
 
-How To
+
+Installation
+------------
+
+Right now it could be installed from a git repo, like:
+
+`pod 'CocoaHoedown', :git => 'https://github.com/js/CocoaHoedown.git'`
+
+
+Usage
 ------
 
 ```
